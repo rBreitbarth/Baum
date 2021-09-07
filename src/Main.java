@@ -9,25 +9,7 @@ public class Main {
     }
 
     private static int findeKaeferInBaum(Baum baum) {
-        int anzahlKaefer = 0;
-        for (Ast ast : baum.getAeste()) {
-            anzahlKaefer += findeKaeferInAst(ast);
-        }
-        return anzahlKaefer;
-    }
-
-    private static int findeKaeferInAst(Ast ast) {
-        int anzahlKaefer = 0;
-        // finde Käfer von weiteren Ästen
-        for (Ast unterAst : ast.getAeste()) {
-            anzahlKaefer += findeKaeferInAst(unterAst);
-        }
-        // finde Käfer von diesem Ast
-        for (Blatt blatt : ast.getBlaetter()) {
-            if (blatt.hatKaefer()) {
-                anzahlKaefer++;
-            }
-        }
-        return anzahlKaefer;
+        // Bitte hier die Lösung eintragen
+        return 0;
     }
 }
